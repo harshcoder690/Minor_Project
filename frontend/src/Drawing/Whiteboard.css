@@ -1,0 +1,123 @@
+canvas {
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    width: 70%;
+    height: 60%;
+    background-color: transparent;
+}
+
+
+/* .options {
+    position: absolute;
+    width: 100%;
+    bottom: -80px;
+} */
+
+.white-board-icons {
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    width: 400px;
+    transform: translateX(-50%);
+}
+
+.white-board-icons>img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.colors-pallette {
+    width: 300px;
+    position: absolute;
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-75%);
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.colors-pallette .color {
+    box-sizing: content-box;
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+    border-radius: 50%;
+}
+
+.colors-pallette .color:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+@media (max-width: 1500px) {
+    /* .white-board .colors-pallette .color {
+        width: 35px;
+        height: 35px;
+        margin: 0px 5px;
+    } */
+}
+
+@media (max-width: 1500px) {
+    /* .white-board {
+        width: 90%;
+        height: 92.5vh;
+        background-size: 100% 100%;
+    }
+    .white-board .colors-pallette {
+        width: 100%;
+        bottom: -5%;
+    } */
+    /* .white-board .colors-pallette .color {
+        width: 32.5px;
+        height: 32.5px;
+        margin: 0px 5px;
+    }
+    .white-board .colors-pallette .color:hover {
+        transform: scale(1.1);
+    } */
+    .white-board-icons>img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .white-board {
+        width: 100%;
+    } */
+    /* .white-board .colors-pallette .color {
+        width: 30px;
+        height: 30px;
+        margin: 0px 3px;
+    } */
+    .white-board-icons {
+        width: 300px;
+    }
+    .white-board-icons>img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 700px) {
+    /* .white-board {
+        width: 100%;
+        height: 85vh;
+    }
+    .white-board .colors-pallette {
+        width: 80%;
+        bottom: -15%;
+    }
+    .white-board .colors-pallette .color {
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+    } */
+    .white-board-icons>img {
+        width: 30px;
+        height: 30px;
+    }
+}

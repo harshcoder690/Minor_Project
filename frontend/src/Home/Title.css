@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@font-face {
+    font-family: headerFont;
+    src: url("../../public/fonts/goo_easter.ttf");
+}
+
+#home .title {
+    position: absolute;
+    right: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    /* z-index: 100; */
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    transition: all ease-in 500ms;
+}
+
+#home .title .title-text>h1 {
+    font-size: 80px;
+    color: white;
+    font-weight: 600;
+    font-family: headerFont;
+    width: 500px;
+}
+
+#home .title .title-text>p {
+    color: white;
+    font-size: 1.15rem;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+#home .title .title-text>button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.15rem;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+#home .title .title-text>button:hover {
+    background-color: white;
+    color: #3f59a8;
+}
+
+@media (max-width:768px) {
+    #home .title {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 400px;
+    }
+    #home .title .title-text>h1 {
+        font-size: 60px;
+        width: 100%;
+    }
+    #home .title .title-text>p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    #home .title .title-text>button {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}

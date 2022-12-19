@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Title;
+    src: url("../../public/fonts/avocado.ttf");
+}
+
+@font-face {
+    font-family: Text;
+    src: url("../../public/fonts/comic.ttf");
+}
+
+.result-modal {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    background-color: white;
+    /* border: 10px solid black; */
+    padding: 50px;
+    z-index: 100;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: Text;
+}
+
+.result-modal .loading-result {
+    /* width: 100%; */
+    height: 100%;
+}
+
+.result-modal .close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.result-title {
+    font-family: Title;
+    font-size: 50px;
+}
+
+.audio-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.result-type {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.result-description {
+    margin-top: 20px;
+    width: 80%;
+    font-size: 17.5px;
+}
+
+.result-images {
+    width: 90%;
+}
+
+.result-images img {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all ease-in 200ms;
+}
+
+.result-images img:hover {
+    transform: scale(1.1);
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+    font-size: 30px !important;
+}
+
+.read-more {
+    margin-top: 20px;
+    font-size: 17.5px;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:1500px) {
+    .result-title {
+        font-size: 45px;
+    }
+    .result-type {
+        font-size: 25px;
+    }
+    .result-description {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1200px) {
+    .result-images img {
+        width: 250px;
+        height: 150px;
+        padding: 7.5px;
+    }
+}
+
+@media (max-width:768px) {
+    .result-title {
+        font-size: 40px;
+    }
+    .result-type {
+        font-size: 20px;
+    }
+    .result-description {
+        margin-top: 30px;
+        font-size: 12.5px;
+    }
+    .result-images {
+        margin-top: 50px;
+    }
+    .result-images img {
+        width: 200px;
+        height: 100px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,13 @@
+#home {
+    width: 100%;
+}
+
+#home>div {
+    flex-direction: row;
+}
+
+@media (max-width:768px) {
+    #home>div {
+        flex-direction: column;
+    }
+}
